@@ -1,0 +1,32 @@
+Features
+
+Working on:
+
+	piping, one layer (eg ls | wc )
+	redirecting output
+	audible bell \a
+	
+	
+To Do:
+
+	execute applications
+	set up pipes between executed applications
+	redirect standard input/output from/to files for the executed applications
+	perform simple commands internally: cd, ls, pwd, history, and exit 
+	The shell needs to be able to handle up and down arrows to select through the history of commands. Only the most recent 10 commands need to be stored in the history. The up arrow must toggle to the previous command, down arrow to the next command. 
+	Audible bell character '\a' (ASCII 0x07): If the user attempts to navigate beyond the end of the list, output '\a'. If a user enters a backspace or delete and no characters exist on the command to delete, output '\a'.
+	
+	cd [directory]
+	–
+	Changes the current working directory to specified directory. If the optional directory is not specified, then the current working directory is changed to the directory specified by the HOME environmental variable.
+
+
+	ls [directory]
+	–
+	Lists the files/directories in the directory specified. If no directory is specified, lists the contents of the current working directory. The order of files listed does not matter, but the type and permissions must precede the file/directory name with one entry per line.
+
+	pwd
+	–
+	Prints the current working directory name. 
+
+	history

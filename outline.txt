@@ -1,0 +1,38 @@
+use the chdir() system call to change directories!
+
+int main(){
+
+    //initial input loop. Repeatedly polls Read() to see if the user has added any new input. Reads 1 character at a time. When it detects a character, feeds it to the parser, eg CharParser->parseChar(char C)
+   
+
+}
+
+/*
+
+classes to build:
+
+    CharParser:
+        Maintains a long string of input characters. Parses each incoming character and adjusts the screen output appropriately.
+        Has the following public functions:
+            parseChar(char C) - takes a character and decides what to do with it. Basically a giant switch statement that calls some internal functions.
+                relies on :
+                    executeInput(inputString) - called when parseChar detects a newline character. Passes the input string to Executor for secondary parsing and execution
+                    writeToScreen(String screenOutput) - called when parseChar detects any of the meta characters like arrow keys, backspace, or newline. Also called even when nothing happens, since you constantly need to be writing to the screen on every loop iteration.
+            scrollHistory() - called on encountering the up or down arrow
+                   
+                   
+        Has the following class variables:
+            String inputString - the aggregate list of all the input the parser has accumulated. May be modified by meta characters like backspace. Is eventually fed to the Executor for execution.
+            String* history - a list of the last 10 history
+
+    Executor:
+        accepts the input string from CharParser, parses it again, and calls the appropriate functions based on the string's instructions
+        Has the following public functions:
+        execute(String instructions) - takes the input string from CharParser, tokenizes it, and executes functions based on each token. Kind of like parseChar() but operates on tokens instead of individual chars
+            Relies on the following private functions:
+                createPipe()
+                redirectOutput()
+                executeCommand(string command)
+               
+
+*/

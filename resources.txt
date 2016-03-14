@@ -1,0 +1,4 @@
+https://www.cs.rutgers.edu/~pxk/416/notes/c-tutorials/pipe.html
+http://www.tldp.org/LDP/lpg/node11.html
+https://www.cs.rutgers.edu/~pxk/416/notes/c-tutorials/pipe.html
+http://www2.cs.uregina.ca/~hamilton/courses/330/notes/unix/pipes/pipes.html
